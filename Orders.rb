@@ -1,4 +1,9 @@
 #!/usr/bin/ruby
+# Code was written for Ruby version 2.7.5
+
+# NOTE: I've tried to make this code re-usable and efficient.
+# ie. theoretically, if you were to call process_orders!() from another class, and implement a databank
+# of orders and products this code will scale and work.
 
 require 'json'
 
@@ -8,11 +13,11 @@ class Orders
   def call
     json_data = get_json_data(ARGV[0])
     order_ids = json_data['orders'].map { |order| order['orderId'] }
-    processOrders!(order_ids)
+    process_orders!(order_ids)
   end
 
   # Process orders by their order id
-  def processOrders!(order_ids)
+  def process_orders!(order_ids)
     # Used to log if products have already been reordered, to prevent additional reorders
     on_reorder = []
 
