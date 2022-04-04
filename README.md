@@ -1,6 +1,6 @@
 # Order fufillment program
 
-## This is a short program to simulate fufilling orders for a wharehousing system.
+## This is a short program to simulate fulfilling orders for a warehousing system.
 
 ## Running the code
 1. Make sure you are using Ruby 2.7.5 or a compitable version
