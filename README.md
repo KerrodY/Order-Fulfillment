@@ -1,4 +1,4 @@
-# Order fufillment program
+# Order fulfillment program
 
 ## This is a short program to simulate fulfilling orders for a warehousing system.
 
